@@ -1,4 +1,4 @@
-name: Sync labels
+name: Labels
 
 on:
   push:
@@ -6,9 +6,11 @@ on:
       - main
     paths:
       - .github/labels.yml
+  workflow_dispatch:
 
 jobs:
   build:
+    name: Synchronise labels
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
