@@ -9,7 +9,7 @@ on:
 jobs:
   template-sync:
     name: Execute
-    if: github.actor != 'dependabot[bot]' && github.repository == 'forgingblazor/template-base'
+    if: github.actor != 'dependabot[bot]' && github.repository == 'forgingblazor/template-docs'
     runs-on: ubuntu-latest
 
     steps:
